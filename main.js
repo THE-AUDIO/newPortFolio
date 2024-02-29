@@ -11,8 +11,7 @@ window.onscroll = () => {
         
         let offset = section.offsetTop -150;
         
-        let height = section.offsetHeight;// hauteur total de la secion avec la bordure
-        
+        let height = section.offsetHeight;// hauteur total de la secion avec la bordure        
         // console.log(`scrol = ${scrollPosition} <br> hauteur ${height} <br> offset ${offset}`);
 
 
@@ -32,7 +31,6 @@ window.onscroll = () => {
     });
     /*=================== sticky navBarre =================*/
     let header = document.querySelector('header')
-
     header.classList.toggle('sticky',window.scrollY>100 )
 }
 
@@ -45,7 +43,6 @@ window.onscroll = () => {
         let navLinks = document.querySelector('.navbar')
         navLinks.classList.toggle('hidden')
     })
-
 
 let elt = document.querySelectorAll('nav a')
 elt.forEach((one)=>{

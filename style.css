@@ -166,7 +166,9 @@ span{
 }
 .about-img{
     width: 35%;
+    /* border-radius: 100% 0% 99% 100% / 100% 100% 100% 100%; */
     animation: image ease-in 2500ms infinite;
+    border-radius: 45%;
 }
 .about-img img{
     width: 25vw;
@@ -203,6 +205,7 @@ span{
     gap: 2rem;
 }
 .container-service .service-box{
+    height: 40vh !important;
     flex: 1 1 30rem;
     background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
@@ -210,6 +213,10 @@ span{
     border-radius: 2rem;
     border: .2rem var(--bg-color);
     transition: .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .service-box:hover{
     border: .2rem solid var(--main-color);
@@ -229,8 +236,7 @@ span{
 }
 
 .portfolio{
-    background: var(--second-bg-color);
-   
+    background: var(--second-bg-color);  
 }
 .portfolio h2{
     margin-bottom: 4rem;
@@ -440,11 +446,7 @@ textarea{
          width: 50%;
       }
      .navbar{
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          width: 100%;
-          text-align: right;
+        opacity: 0;
       }
       .navbar a{
          margin-top: 2rem;
@@ -453,7 +455,13 @@ textarea{
          transition: 1000ms ease;
       }
     .hidden{
-     display: none;
+        transition: 500ms;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: right;
     }
     .portfolio-container{
         width: 100%;
@@ -489,6 +497,7 @@ textarea{
         }
         .about-img{
             width: 50%;
+
         }
         .about-img img{
             width: 100%;
