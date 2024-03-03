@@ -53,3 +53,5 @@ elt.forEach((one)=>{
         iconActive.classList.toggle('bx-menu')
     })
 })
+
+// =============================== Send Email =========================
