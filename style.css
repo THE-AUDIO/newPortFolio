@@ -338,6 +338,13 @@ span{
 textarea{
     resize: none;
 }
+textarea::placeholder{
+    color: var(--text-color);
+}
+input::placeholder{
+    color: var(--text-color);
+
+}
 .contact form .btn{
     margin-top: 2rem;
     cursor: pointer;
