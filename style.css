@@ -338,8 +338,11 @@ span{
 textarea{
     resize: none;
 }
-textarea::placeholder{
-    color: var(--text-color) !important;
+.contact form p{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-align: left;
 }
 input::placeholder{
     color: var(--text-color) !important;
