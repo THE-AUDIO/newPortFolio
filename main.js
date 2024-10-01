@@ -1,7 +1,11 @@
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
+
 // ajout de la classe activr quand un lien a été acitvé
+
 window.addEventListener('DOMContentLoaded',()=>{
     window.addEventListener('scroll', ()=>{
-        window.onscroll = () => {   
+        window.onscroll = () => { 
              sections.forEach(section => {
                  let scrollPosition = window.scrollY;
                  let offset = section.offsetTop -150;
@@ -30,10 +34,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     })
 })
 
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
-const btnContact = document.querySelector(".link-contact")
-const contactSide = document.querySelector(".new-contact")
+
 const btnColsed = document.querySelector(".closed");
     let iconActive = document.querySelector('#menu-icon')
     iconActive.addEventListener('click',()=>{
@@ -53,12 +54,5 @@ elt.forEach((one)=>{
     })
 })
 
-btnContact.addEventListener("click",()=>{
-    contactSide.classList.add("new-contact-active")
-    document.body.classList.add("no-scrolling")
-})
-btnColsed.addEventListener("click",()=>{
-    contactSide.classList.remove("new-contact-active")
-    document.body.classList.remove("no-scrolling")
-})
+
 // =============================== Send Email =========================
