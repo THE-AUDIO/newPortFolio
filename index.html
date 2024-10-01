@@ -10,14 +10,14 @@
 <body>
 <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#" class="logo">THEO</a>
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#service">Services</a>
+            <a href="#service">Competences</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact" class="link-contact">Contact</a>
         </nav>
     </header>
 
@@ -35,7 +35,6 @@
                 <a href="https://www.linkedin.com/in/audio-nandraina-the-997554251/"><i class='bx bxl-linkedin-square' ></i></a>
             </div>
             <a href="doc/THE-Audio_Cv.pdf" download="THE-CV.PDF" class="btn">Download Cv</a>
-            
         </div>
         <div class="home-img">
             <img src="img/home.png" alt="The Audio">
@@ -50,7 +49,7 @@
         <div class="about-content">
             <h2 class="heading">About <span>Me!</span></h2>
             <h3>FrontEnd Developer</h3>
-            <p>My name is THE Audio Nandraina I was born on January 2, 2003 in Antenimay commune Andranabomaro district Mahanoro. I had my BEPEC in 2018 and my BACC series C in 2021 and after that I joined the SESAME PROGRAM where I benefited from training on personal development and the School and Employment Orientation course without forgetting the scholarship. study to study at ISPM. I am in the Electronics, Computer System and Artificial Intelligence sector</p>
+            <p>My name is THE Audio Nandraina I was born on January 2, 2003 in Antenimay commune Andranabomaro district Mahanoro. I had my BEPEC in 2018 and my BACC series C in 2021 and after that I joined the SESAME PROGRAM where I benefited from training on personal development and the School and Employment Orientation course without forgetting the scholarship. Now i study at ISPM. I am in the Electronics, Computer System and Artificial Intelligence sector</p>
             <a href="https://www.linkedin.com/in/audio-nandraina-the-997554251" target="_blank" class="btn">LinkedIn</a>
         </div>
     </section>
@@ -59,7 +58,7 @@
 
 
     <section class="service" id="service">
-        <h2 class="heading"> MY <span>COMPETENCES</span></h2>
+        <h2 class="heading"> MY <span>TECHNOLOGIES</span></h2>
          <div class="container-service">
            <div class="service-box">
                 <i class='bx bx-code-alt' ></i>
@@ -70,16 +69,38 @@
 
            <div class="service-box">
                 <i class='bx bxs-paint' ></i>
-                <h3>BackEnd Developer</h3>
-                <p>On the backend side I have already used <span>Nestjs</span> for <span>web applications</span></p>
+                <h3>Tools</h3>
+                <p>during some of my project i used <span>Tailwindcss</span>  to <span>give a beauty in my</span> websites </p>
                 <!-- <a href="#" class="btn">Read more</a> -->
             </div>
        <div class="service-box">
-            <i class='bx bx-signal-5' ></i>
-            <h3>loading...   system and Network Administrator </h3>
-            <p>Talk about System and Network Administrator I'm still really a beginner but at the moment I'm doing everything I can to study it effectively</p>
+        <i class='bx bx-code-alt' ></i>
+        <h3>BackEnd Developer</h3>
+        <p>On the backend side I have already used <span>Nestjs</span> and <span>Spring-boot</span> for <span>web applications</span></p>
             <!-- <a href="#" class="btn">Read more</a> -->
         </div>
+        <div class="service-box">
+           <div class="tech">
+            <img src="/img/logo-js.png" alt="JavaScript">
+            <h3>JAVASCRIPT</h3>
+            <h3> 75%</h3>
+           </div>
+       </div>
+
+       <div class="service-box">
+            <div class="tech">
+                <img src="/img/angular.png" alt="angular-logo">
+                <h3>ANGULAR</h3>
+                 <h3>70%</h3>
+           </div>
+        </div>
+   <div class="service-box">
+       <div class="tech">
+            <img src="/img/spring-boot.png" alt="spring-boot">
+            <h3>SPRING-BOOT</h3>
+            <h3>50%</h3>
+        </div>
+    </div>
          </div>
     </section>
     <!-- Portfolio section design -->
@@ -125,7 +146,7 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="img/portfolio5.png" alt="">
+                <video class="myVideo" src="img/bookstore.mp4" autoplay controls muted="muted">
                 <div class="portfolio-layer">
                     <h4>ANGULAR EXAMPLE</h4>
                     <p>here is one of my angular project</p>
@@ -151,14 +172,15 @@
         <h2 class="heading"> Contact <span>Me!</span></h2>
         <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="THE Audio Nandraina" value="THE Audio Nandraina">
-                <input type="email" placeholder="nandraina.dev22@gmail.com" value="nandraina.dev22@gmail.com">
+                <input type="text" placeholder="Exemple: Rakoto">
+                <input type="email" placeholder="Exemple: rakoto@gmail.com">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="+261342645077" value="+261342645077">
-                <input type="text" placeholder="Loading to find a internship" value="Loading to find a internship">
+                <input type="number" placeholder="Exemple: +261345137461">
+                <input type="text" placeholder="Exemple: Objet">
             </div>
-            <p>Actuellement étudiant en deuxième année d'informatique, je suis passionné par l’imagination, la création et l'innovation. J'ai récemment développé un site web pour la gestion des emprunts de livres en ligne, renforçant ainsi mes compétences en Angular, HTML, JavaScript et gestion de bases de données, tout en ayant des bases en Python.</p>
+            <textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
+            <input type="submit" value="send Message" class="btn">
         </form>
     </section>
     <!-- footer desing -->
@@ -173,9 +195,14 @@
         </div>    
     </footer>
 
-
- <script src="main.js"></script><script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
-
+<div class="new-contact">
+    <h3>nandraina.dev22@gmail.com</h3>
+    <h4>+261342645077</h4>
+    <svg xmlns="http://www.w3.org/2000/svg"class="bi bi-x-lg closed" viewBox="0 0 16 16">
+        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+    </svg>
+</div>
+ <script src="main.js"></script>
+ <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
