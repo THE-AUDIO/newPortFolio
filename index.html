@@ -11,13 +11,13 @@
 
 <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">THEO</a>
+        <a href="#" class="logo">Portfolio</a>
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#service">Competences</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio">Realisation</a>
             <a href="#contact">Contact moi</a>
         </nav>
     </header>
@@ -85,7 +85,7 @@
         </div>
         <div class="service-box">
            <div class="tech">
-            <img src="/img/logo-js.png" alt="JavaScript">
+            <img src="img/logo-js.png" alt="JavaScript">
             <h3>JAVASCRIPT</h3>
             <h3> 75%</h3>
            </div>
@@ -93,14 +93,14 @@
 
        <div class="service-box">
             <div class="tech">
-                <img src="/img/angular.png" alt="angular-logo">
+                <img src="img/angular.png" alt="angular-logo">
                 <h3>ANGULAR</h3>
                  <h3>70%</h3>
            </div>
         </div>
    <div class="service-box">
        <div class="tech">
-            <img src="/img/spring-boot.png" alt="spring-boot">
+            <img src="img/spring-boot.png" alt="spring-boot">
             <h3>SPRING-BOOT</h3>
             <h3>50%</h3>
         </div>
@@ -176,15 +176,15 @@
         <h2 class="heading"> Contact <span>Me!</span></h2>
         <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Exemple: Rakoto">
-                <input type="email" placeholder="Exemple: rakoto@gmail.com">
+                <input type="text" id="nom" placeholder="Exemple: Rakoto">
+                <input type="email" id="email" placeholder="Exemple: rakoto@gmail.com">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Exemple: +261345137461">
-                <input type="text" placeholder="Exemple: Objet">
+                <input type="tel" id="tel" placeholder="Exemple: +261345137461">
+                <input type="text" id="object" placeholder="Exemple: Objet">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
-            <input type="submit" value="send Message" class="btn">
+            <textarea name="" id="message" cols="30" rows="10" placeholder="your message"></textarea>
+            <input type="submit" onclick="sendEmail()" value="send Message" class="btn">
         </form>
     </section>
     <!-- footer desing -->
@@ -198,8 +198,6 @@
             </a>
         </div>    
     </footer>
-
-
  <script src="main.js"></script>
  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>

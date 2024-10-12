@@ -4,6 +4,7 @@ let navLinks = document.querySelectorAll('header nav a');
 // ajout de la classe activr quand un lien a été acitvé
 
 window.addEventListener('DOMContentLoaded',()=>{
+
     window.addEventListener('scroll', ()=>{
         window.onscroll = () => { 
              sections.forEach(section => {
@@ -32,6 +33,16 @@ window.addEventListener('DOMContentLoaded',()=>{
          }
          
     })
+    let nom = document.getElementById("nom").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+        let tel = document.getElementById("tel").value;
+        let object = document.getElementById("object").value;
+        
+    function sendEmail() {
+        console.log(nom, email, message, tel, object);
+    
+    }
 })
 
 
